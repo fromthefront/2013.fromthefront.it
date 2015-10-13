@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg preserveAspectRatio="none" width="931px" height="123px" viewBox="0 0 931 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="strada_fronte" transform="translate(-1.000000, -113.000000)">
+            <g id="Page 1">
+                <path d="M591.999987,113 L932,236 L0.9999995,236 L349,113 L591.999987,113 L591.999987,113 Z M591.999987,113" id="strada" opacity="0.725639205" fill="#F5F5F5"></path>
+                <path d="M69.8220966,295.453699 L124.584892,313.092553 L115.068336,330.990592 L53.0542347,298.017109 L69.8220966,295.453699 Z M179.949299,354.859847 L187.570544,342.161778 L277.280567,372.953207 L261.583438,389.511483 L179.949299,354.859847 Z M338.068334,417.990592 L352.068335,402.990591 L479.068328,440.990588 L455.325673,463.384335 L338.068334,417.990592 Z M539.068335,487.990591 L554.404122,474.281805 L894.068337,559.990592 L843.068337,599.990594 L539.068335,487.990591 Z M539.068335,487.990591" id="strisce" opacity="0.622443182" fill="#FFFFFF" transform="translate(473.561286, 447.722147) rotate(-290.000000) translate(-473.561286, -447.722147) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

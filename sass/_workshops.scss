@@ -1,0 +1,463 @@
+
+.internal_page{
+	background: url(../i/bolle.png) repeat;
+	header{
+		margin-bottom: 0;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 20px;
+		z-index: 10;
+		@extend .cf;
+	}
+	.topbar{
+		background-color: $maincolor;
+		padding: 0 10px;
+		@extend .cf;
+		.ftf_box, p{
+			color: white;
+			display: inline-block;
+			float: left;
+			@extend .cf;
+		}
+		.ftf_box{
+			width: 30%;
+			margin: 0;
+			@include respond-to(570px){
+				width: 20%;
+			}
+		}
+		h3{
+			margin: 0;
+			background: url(../i/logo_ftf_white.png) no-repeat left;
+			color: transparent;
+			font-size: 0/0 a;
+			width: 130px;
+			height: 35px;
+			@extend .ir;
+			@include respond-to(570px){
+				width: 50px;
+			}
+		}
+		p{
+			width: 70%;
+			text-transform: uppercase;
+			font-family: Veneer, Arial;
+			font-size: 18px;
+			line-height: 35px;
+			text-align: right;
+			@include respond-to(720px){
+				font-size: 16px;
+			}
+			@include respond-to(630px){
+				font-size: 14px;
+			}
+			@include respond-to(570px){
+				width: 80%;
+				font-family: Arial;
+				line-height: 16px;
+				font-size: 11px;
+			}
+		}
+	}
+	.midbar{
+		// border-radius: 0 0 8px 8px;
+		// border-bottom: 8px solid #dedede;
+		/*box-shadow: 0 1px 1px -1px red, 
+					0 2px 2px -2px red, 
+					0 3px 3px -3px red, 
+					0 4px 4px -4px red, 
+					0 5px 5px -5px red,
+					0 6px 6px -6px red, 
+					0 7px 7px -7px red, 
+					0 8px 8px -8px red, 
+					0 9px 9px -9px red;*/
+		background: #f1f1f1;
+		height: 135px;
+		position: relative;
+		@extend .cf;
+		@include respond-to(tablet){
+		} 
+		&:after, &:before{
+			position: absolute;
+			content: "";
+			width: 50%;
+			height: 0;
+			border-style: solid;
+			border-width: 10px;
+			border-color: #ddd transparent transparent transparent;
+			bottom: -19px;
+		}
+		&:before{
+			left: 0;
+		}
+		&:after{
+			right: 0;
+		}
+		h1{
+			margin: 0;
+			width: 200px;
+			height: 114px;
+			margin-top: 10px;
+			@extend .ir;
+			@include respond-to(350px){
+				margin: 0;
+				width: 160px;
+				height: 94px;
+				margin-top: 17px;
+			}
+		}
+	}
+	.logobox, nav, .buy_ws{
+		float: left;
+		position: relative;
+		@extend .cf;
+	}
+	.logobox{
+		width: 25%;
+		max-width: 200px;
+		@include respond-to(840px){
+			width: 30%;
+		}
+	}
+	nav{
+		width: 60%;
+		max-width: 590px;
+		@include respond-to(840px){
+			width: 50%;
+		}
+	}
+	.buy_ws{
+		width: 15%;
+		min-width: 120px;
+		@include respond-to(840px){
+			width: 20%;
+		}
+	}
+	nav{
+		padding: 35px 50px;
+		//width: 590px;
+		text-align: center;
+		display: inline-block;
+		z-index: 20;
+		@extend .cf;
+		@include respond-to(640px){
+			-webkit-transition: all .8s;
+			-moz-transition: all .8s;
+			-o-transition: all .8s;
+			transition: all .8s;
+			position: absolute;
+			margin-top: 140px;
+			margin-left: 2%;
+			width: 96%;
+			left: 0;
+			overflow: hidden;
+			padding:0 0 20px 0;
+		}
+	}
+	.navbar{
+		width: 100%;
+		background: rgb(250, 250, 250);
+		text-align: center;
+		padding-top: 20px;
+		position: relative;
+		@extend .cf;
+		height: 60px;
+		@include respond-to(840px){
+			height: 80px;
+			padding-top: 10px;
+		}
+		&:after, &:before{
+			content: "";
+			width: 0;
+			height: 0;
+			border-width: 20px 40px 20px 40px;
+			border-style: solid;
+			position: absolute;
+			z-index: -20;
+			@include respond-to(640px){
+				display: none;
+			}
+		}
+		&:before{
+			bottom: -10px;
+			left: -40px;
+			border-color: transparent transparent #ddd transparent;
+		}
+		&:after{
+			top: -10px;
+			right: -40px;
+			border-color: #ddd transparent transparent transparent;
+		}
+		li{
+			color: #333;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-family: Veneer, Arial;
+			display: inline-block;
+			margin-left: 10px;
+			padding-left: 10px;
+			border-left: 2px solid #333;
+			&:first-child{
+
+			}
+		}
+		li:first-child{
+			margin-left: 0;
+			padding-left: 0;
+			border-left: 0;
+			&:before{
+				content: "";
+				width: 0;
+				height: 0;
+				left: -40px;
+				bottom: -10px;
+				position: absolute;
+				z-index: 10;
+				border-width: 10px 40px;
+				border-color: transparent #ccc transparent transparent;
+				border-style: solid;
+				z-index: -10;
+			}
+		}
+		li:last-child{
+			&:before{
+				content: "";
+				width: 0;
+				height: 0;
+				right: -40px;
+				top: -10px;
+				position: absolute;
+				z-index: 10;
+				border-width: 10px 40px;
+				border-color: transparent transparent transparent #ccc;
+				border-style: solid;
+				z-index: -10;
+				@include respond-to(640px){
+					top: initial;
+					bottom: -10px;
+				}
+			}
+		}
+		li{
+			@include respond-to(840px){
+				width: 45%;
+				float: left;
+				margin-left: 0;
+				line-height: 30px;
+				&:nth-child(even){
+					border-left: 0;
+				}
+				&:nth-child(odd){
+					margin-left: 0;
+					padding-left: 0;
+					border-left: 0;
+				}
+			}
+		}
+		a:hover{
+			color: lighten(#333, 15%);
+		}
+		.selected{
+			color: $maincolor;
+			&:hover{
+				color: $maincolor;
+			}
+		}
+	} // .navbar
+	.buy_ws{
+			font-size: 32px;
+			text-transform: uppercase;
+			font-family: Veneer, Arial;
+			text-align: center;
+			float: right;
+			padding-right: 20px;
+			margin-top: 13px;
+		a{
+			color: #2cc4fd;				
+			&:hover, &:hover em{
+				color: $maincolor;
+			}
+		}
+		em{
+			color: #2cc4fd;				
+			font-size: 40px;
+			top: -3px;
+			position: relative;
+			display: block;
+		}
+		.be_one{
+			font-size: 20px;
+			background: $maincolor;
+			padding: 3px 5px;
+			color: white;
+		}	
+		.ticket_box{
+			width: 110px;
+			position: relative;
+			display: block;
+		}
+	}
+	.page_title{
+		background: url(../i/lampione_mini.png) no-repeat left;
+		//background-size: 20px 40px;
+		line-height: 110px;
+		background-position: 0 0; 
+		margin-bottom: 0;
+		padding: 10px 0 0 10px;
+	}
+	#wks_main, #schedule_main{
+		padding: 20px;
+		text-align: left;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		text-align: left;
+		@extend .cf;
+		@include respond-to(640px){
+			margin-top: 70px;
+		}
+	}
+	.wks_aaron, .wks_seb{
+		font-family: Arial;
+		font-size: 15px;
+		line-height: 21px;
+		color: #333;
+		p{
+			margin: 20px 0;
+			a{
+				border-bottom: 1px dashed #ccc;
+			}
+		}
+		@extend .cf;
+		ul{
+			padding-left: 30px;
+		}
+		li{
+			position: relative;
+			line-height: 21px;
+			margin-bottom: 21px;
+			&:before{
+				content: "";
+				position: absolute;
+				left: -25px;
+				top: 6px;
+				width: 15px;
+				height: 10px;
+				display: inline-block;
+				background: url(../i/cap.png) no-repeat center;
+				background-size: 15px 10px;
+				margin-right: 15px;
+			}
+		}
+		.buy_ticket{
+			background: $maincolor;
+			color: white;
+			display: inline-block;
+			float: right;
+			text-transform: uppercase;
+			font-family: Veneer, Arial;
+			padding: 3px 6px;
+			&:hover{
+				background: $maindarkcolor;
+			}
+			@include respond-to(600px){
+					width: 100%;
+					text-align: center;
+					padding: 10px;
+					margin: 10px 0;
+			}
+		}
+	}
+	.wks_aaron, .schedule_timetable{
+		margin: -33px 0 50px 0;
+		padding: 40px 0;
+		border-bottom: 2px solid #aaa;
+		border-top: 5px solid #999;
+		position: relative;
+		z-index: 10;
+	}
+	.author_name{
+		font-family: "ThirstyRough",sans-serif;
+		font-size: 18px;
+		color: #505050;
+	}
+	.wks_title{
+		font-family: Veneer, Arial;
+		font-size: 24px;
+	}
+	.author_bio, .wks_thumb, .wks_description{
+		display: inline-block;
+		float: left;
+		@extend .cf;
+	}
+	.author_bio, .wks_thumb{
+		width: 25%;
+		@include respond-to(600px){
+			width: 100%;
+		}
+	}
+	.wks_description{
+		width: 50%;
+		padding: 0 4%;
+		@include respond-to(600px){
+			width: 100%;
+			padding: 0;
+		}
+		p{
+			&:first-of-type{
+				font-size: 16px;
+				color: black;
+			}
+		}
+	}
+	.wks_thumb{
+		text-align: center;
+	}
+	.wks_thumb img{
+		max-width: 100%;
+		@include respond-to(600px){
+			margin: 20px 0;
+		}
+	}
+
+// SCHEDULE ONLY
+	.entry{
+	    width: 100%;
+	    height: 100%;
+	    position: relative;
+		//background-image: linear-gradient(to right, transparent 99px,#999 100px, #999 101px, transparent 102px);
+		background-repeat: repeat-y;		
+		@extend .cf;
+	}
+	.time, .event{
+		display: inline-block;
+		float: left;
+		@extend .cf;
+	}
+	.time{
+		width: 200px;
+		text-align: center;
+		p{
+			padding-left: 30px;
+			display: inline-block;
+			position: relative;
+		}
+	}
+	.event{
+		max-width: 500px;
+	}
+	.break, .speech{
+		p:before{
+			background: url(../i/cap.png) no-repeat center;
+			content: "";
+			position: absolute;
+			left: 3px;
+			width: 23px;
+			height: 13px;
+		}
+	}
+
+} // .internal_page
+
+
+
